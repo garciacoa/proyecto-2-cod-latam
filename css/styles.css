@@ -39,6 +39,38 @@ body {
     color: black;
 }
 
+
+
+/*Configuracion del Boton Dark Mode llamado desde Javascript*/
+.dark-mode {
+    background-color:black;
+    color: white;
+
+    
+    .menu a {
+        color: white;
+            }
+
+    .presentacion {
+         background-color: black;
+         border: 2px solid white;
+             }
+
+    .formacion {
+    border: 2px solid white;
+    background-color: black;            
+     }
+
+     .experiencia {
+        border: 2px solid white;
+        background-color: black;
+            }
+    #contacto {
+    background-color: black;
+    border: 2px solid white;
+    }        
+
+}   
 /*Header*/
 
 header{
@@ -47,6 +79,16 @@ header{
     justify-content: space-between;
     align-items: left;
     }
+
+
+    .darkico img {
+        max-width: 50%;
+        max-height: 80px;
+        margin-top: 0px;
+        margin-bottom: 10px;
+        
+          }
+
 
     .navbar {
         display: flex;
@@ -86,7 +128,8 @@ header{
       }
       
       .menu a:hover {
-        color: #00ff15;
+        color: red;
+        font-size: 25px;;
       }
       
       
@@ -101,6 +144,8 @@ nav li{
     margin-left: 20px;
 }
 
+
+    
 
 .presentacion {
     box-sizing: border-box;
@@ -126,14 +171,14 @@ nav li{
 
 
 .foto img {
-max-width: 100%;
-max-height: 300px;
-margin-top: 10px;
-margin-bottom: 10px;
-border-radius: 30%; 
-box-shadow: 0 0 15px;
-}
-
+    max-width: 100%;
+    max-height: 300px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 30%; 
+    box-shadow: 0 0 15px;
+    }
+    
 
 .formacion {
     margin-top: 20px;
@@ -279,41 +324,64 @@ footer {
 
 @media (max-width: 768px) {
 
+
+body {
+    background-color: rgb(234, 238, 238);
+}
 /*Header*/
     header {
     flex-direction: column;
     padding:15px;
     text-align: left;
-    ;
-  }
+     }
+
+
+
+     .darkico img {
+        float:right;
+        max-width: 10%;
+        max-height: 40px;
+       
+        
+    }
+
 
 .menu-icon {
     display: flex;
-    align-items: left;
+    align-items: right;
     
   }
 
   .menu {
     display: none;
-    align-items: left;
     flex-direction: column;
-   
-       
-    
-  }
+     }
 
-  .menu.active {
+
+
+
+
+
+     .menu.active {
     display: flex;
-  }
+            }
+
+            .menu a:hover {
+                color: black;
+              }
+              
+       
 
 
 
-/*Main*/
+       
+            
 
+ /*Main*/
 main {
     padding 20px;
     font-size: 14px;
-}
+    }
 
 
 .foto img {
@@ -322,16 +390,38 @@ main {
     }
 
 .presentacion{
-    background-color: rgb(225, 173, 238);
-    color:#f3f2f4
-    font-size: 14px;
+    background-color: rgb(166, 255, 0);
+    font-size: 14px   
     text-align: center;
 }
+
 .formacion {
-    background-color: rgb(234, 236, 246);
-    color:rgb(9, 26, 24);
-    font-size: 14px;
+    background-color: rgb(201, 241, 125);
+    font-size: 18px;
+
+
 }
+
+.experiencia {
+    background-color: rgb(140, 230, 203);
+   font-size: 18px;
+}
+
+.descargacv:hover{
+    background-color: rgb(18, 44, 3);
+    color:rgb(252, 253, 253);
+    
+}
+
+
+.descargacv {
+    background-color: rgb(248, 253, 253);
+    color:rgb(22, 26, 240);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 1px 5px;
+}
+
 
 .grupos {
     display: flex;
@@ -357,6 +447,5 @@ button{
             margin: 0 auto;
         
                  }
-
 
                 }
